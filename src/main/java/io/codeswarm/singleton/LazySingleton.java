@@ -6,9 +6,12 @@ package io.codeswarm.singleton;
  * (on the call of getInstance method).
  */
 public class LazySingleton {
+
     private static LazySingleton singleton = null;
+
     private LazySingleton() {
     }
+
     public static LazySingleton getInstance() {
         if (singleton == null) {
             singleton = new LazySingleton();
