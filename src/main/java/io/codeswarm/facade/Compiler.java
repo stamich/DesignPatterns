@@ -2,14 +2,14 @@ package io.codeswarm.facade;
 
 public class Compiler {
 
-    private LexicalAnalyzer lexicalAnalyzer;
+    private final LexicalAnalyzer lexicalAnalyzer;
 
     public Compiler() {
         lexicalAnalyzer = new LexicalAnalyzer();
     }
 
     public void compile() {
-        System.out.println("Compile...");
+        System.out.println("Facade - Compile...");
         lexicalAnalyzer.analyze();
     }
 }
