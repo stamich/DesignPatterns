@@ -7,9 +7,13 @@ public class Manager implements Employee {
     private final Person person = new Person();
 
     @Override
-    public void create(String firstName, String lastName, BigDecimal salary) {
+    public void create(String firstName, String lastName) {
         person.setFirstName(firstName);
         person.setLastName(lastName);
+    }
+
+    @Override
+    public void setSalary(BigDecimal salary) {
         person.setSalary(salary);
     }
 
